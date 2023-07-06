@@ -11,12 +11,11 @@ varias líneas */}
 <p>Paragraph 3</p>
 </>;
 const jsx = (
-  <div>
+  <>
     <h1>Hello World</h1>
-    <p>Lets render this to the DOM</p>
-  </div>
+    <p>Vamos a renderizar este HTML al DOM</p>
+  </>
 );
-
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const challenge_node = ReactDOM.createRoot(document.getElementById('challenge-node'));
