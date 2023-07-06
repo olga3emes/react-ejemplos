@@ -2,13 +2,17 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 
-const camelCase =(
-  <div className="myDivClass">
-    {/* no podemos usar <></> */}
-    <p>Añadiendo una clase a este div</p>
-  </div>
-);
+class Kitten extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+  render() {
+    return (<h1>Hola gatito!</h1>);
+  }
+}
+
 const root = ReactDOM.createRoot(
   document.getElementById('root'));
-root.render([camelCase]);
+root.render(new Kitten().render());
 
+/* Cuidado con los paréntesis en las llamadas a objetos y funciones */
