@@ -2,17 +2,28 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 
-class Kitten extends React.Component {
+const ChildComponent = () =>{
+  return(
+    <div>
+      <p>I am the child</p>
+    </div>
+  );
+};
+class ParentComponent extends React.Component{
   constructor(props) {
     super(props);
   }
   render() {
-    return (<h1>Hola gatito!</h1>);
+    return (
+      <div>
+        <h1>I am the parent</h1>
+        <ChildComponent />
+      </div>
+    );
   }
-}
+};
 
 const root = ReactDOM.createRoot(
   document.getElementById('root'));
-root.render(new Kitten().render());
-
+root.render(new ParentComponent().render());
 /* Cuidado con los paréntesis en las llamadas a objetos y funciones */
