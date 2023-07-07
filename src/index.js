@@ -1,9 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import Welcome from './components/Welcome';
-
+import TypesOfFood from './components/food/TypesOfFood'
 
 const root = ReactDOM.createRoot(
   document.getElementById('root'));
-root.render(Welcome());
+root.render(
+  <TypesOfFood />
+  /* Si utilizamos etiquetas es más sencillo */
+);
