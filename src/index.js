@@ -1,10 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import Welcome from './components/Welcome';
+import ToDo from './components/tareas/ToDo';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root'));
 root.render(
-  <Welcome  user='Mark'/>
+  <div className='paddingTres'>
+    <ToDo />
+  </div>
 );
