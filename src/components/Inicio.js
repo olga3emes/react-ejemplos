@@ -1,14 +1,15 @@
 import { Component } from "react";
-class Welcome extends Component {
+import Welcome from "./Welcome";
+class Inicio extends Component {
     constructor(props) {
         super(props);
     }
     render() {
         return (
             <div>
-                <p>Bienvenid@ <strong>{this.props.name}</strong>, soy un componente</p>
+                <Welcome name={"Olga"} />
             </div>
         );
     }
 };
-export default  Welcome;
+export default Inicio;
