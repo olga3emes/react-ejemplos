@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import StatefulComponent from './components/StatefulComponent';
+import MyComponent from './components/MyComponent';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root'));
 root.render(
   <div className='paddingTres'>
-    <StatefulComponent />
+    <MyComponent />
   </div>
 );
