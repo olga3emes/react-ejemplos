@@ -7,8 +7,9 @@ class MyComponent extends Component {
         }
     }
     render() {
+        const name= this.state.name;
         return (
-            <div><h1>{this.state.name}</h1></div>
+            <div><h1>{name}</h1></div>
         );
     }
 };
