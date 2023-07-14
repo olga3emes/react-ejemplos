@@ -4,12 +4,19 @@ class MyComponent extends Component {
         super(props);
         this.state = {
             name: 'DAW/DAM'
-        }
+        };
+        this.handleClick = this.handleClick.bind(this);
+    }
+    handleClick() {
+        this.setState({
+            name: "React rocks!"
+        });
     }
     render() {
-        const name= this.state.name;
         return (
-            <div><h1>{name}</h1></div>
+            <div>
+                <button onClick={this.handleClick}>Haz click aquí</button>
+                <h1>{this.state.name}</h1></div>
         );
     }
 };
