@@ -2,13 +2,16 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 
-const camelCase =(
-  <div className="myDivClass">
-    {/* no podemos usar <></> */}
-    <p>Añadiendo una clase a este div</p>
-  </div>
-);
+const DemoComponent = function () {
+  return (
+    <div className='myDivClass'>
+      Añadiendo una clase a este div y 
+      utilizándolo dentro de una función
+    </div>
+  );
+}
+
 const root = ReactDOM.createRoot(
   document.getElementById('root'));
-root.render([camelCase]);
+root.render([DemoComponent()]);
 
