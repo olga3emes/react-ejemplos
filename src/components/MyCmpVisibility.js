@@ -15,12 +15,11 @@ class MyCmpVisibility extends Component {
                 return state.visibility = false;
         })
     }
-
     //OTRA SOLUCIÓN
     //   this.setState(state => ({
     //         visibility: !state.visibility
     //       }));
-    //OTRO SOLUCIÓN
+    //OTRA SOLUCIÓN 2
     //   this.setState(state => {
     //         if (state.visibility === true) {
     //            return { visibility: false };
